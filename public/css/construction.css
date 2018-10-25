@@ -124,7 +124,11 @@ input[type=text]{
 	background-color: rgb(255,87,75);
 	
 }
-
+.submit:disabled, .submit[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
 
 @media only screen and (max-width: 621px) {
 	

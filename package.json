@@ -1,5 +1,5 @@
 {
-  "name": "Node-Website-EC2-Sample-App",
+  "name": "node-website-ec2-sample-app",
   "description": "Sample NodeJs web application",
   "version": "0.0.1",
   "private": true,
