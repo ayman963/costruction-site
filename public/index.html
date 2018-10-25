@@ -28,10 +28,15 @@
 			</div>
 			<input id="emailAddress" type="email" placeholder="Deine E-Mail Adresse">
 			<div class="bestaetigung">
-				<input type="checkbox" name="vehicle1" value="Bike" onChange="document.getElementById('submitButton').disabled = !this.checked;"> Hiermit bestätige ich, dass mir ausbildung-leicht-gemacht.de Werbung per Newsletter zukommen lassen darf.
-            </div>
-			<input name="submit" id="submitButton" type="submit" value="Submit" disabled="disabled">
+				<input type="checkbox" name="vehicle1" value="Bike" onchange="<script src='./js/activateButton.js'></script>");
+				> Hiermit bestätige ich, dass mir ausbildung-leicht-gemacht.de Werbung per Newsletter zukommen lassen darf.
+			</div>
+			<input type="submit" class="submit" id="submitButton" value="Submit" disabled="disabled">
 		</div>
 	 </div>
 </body>
 </html>
+
+<!-- document.getElementById('submitButton').disabled = !this.checked); 
+
+-->
