@@ -29,13 +29,13 @@
 				<p class="Normalopen">Bleib auf dem Laufenden zu</p>
 				<p class="capitalslab">ausbildung leicht gemacht</p>
 			</div>
-			<form id="send-email-form" method="POST" action="/alg-emailHandler">
-				<input id="emailAddress" type="email" placeholder="Deine E-Mail Adresse">
+			<form id="send-email-form" method="POST" action="/awscodestar-email-send-lambda">
+				<input name="emailAddress" id="emailAddress" type="email" placeholder="Deine E-Mail Adresse">
 				<div class="bestaetigung">
 					<input type="checkbox" name="checkbox" id="checkbox" value="Bike" onchange="document.getElementById('submit').disabled = !this.checked;">
 					Hiermit bestätige ich, dass mir ausbildung-leicht-gemacht.de Werbung per Newsletter zukommen lassen darf. <br>
 				</div>
-				<input type="submit" class="submit" id="submit" value="Submit" disabled="disabled">
+				<input type="submit" class="submit" id="submit" value="Senden" disabled="disabled">
 			</form>
 		</div>
 	</div>
