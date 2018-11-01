@@ -29,14 +29,15 @@
 				<p class="Normalopen">Bleib auf dem Laufenden zu</p>
 				<p class="capitalslab">ausbildung leicht gemacht</p>
 			</div>
-			<form id="send-email-form" method="POST" action=" https://oi79ahtq4c.execute-api.eu-west-1.amazonaws.com/test">
+			<form name="send" method="POST" action=" https://ow53ugb38i.execute-api.eu-west-1.amazonaws.com/Prod/">
 				<input name="emailAddress" id="emailAddress" type="email" placeholder="Deine E-Mail Adresse">
-				<div class="bestaetigung">
-					<input type="checkbox" name="checkbox" id="checkbox" value="Bike" onchange="document.getElementById('submit').disabled = !this.checked;">
-					Hiermit bestätige ich, dass mir ausbildung-leicht-gemacht.de Werbung per Newsletter zukommen lassen darf. <br>
-				</div>
+
 				<input type="submit" class="submit" id="submit" value="Senden" disabled="disabled">
 			</form>
+			<div class="bestaetigung">
+				<input type="checkbox" name="checkbox" id="checkbox" value="Bike" onchange="document.getElementById('submit').disabled = !this.checked;">
+				Hiermit bestätige ich, dass mir ausbildung-leicht-gemacht.de Werbung per Newsletter zukommen lassen darf. <br>
+			</div>
 		</div>
 	</div>
 </body>
