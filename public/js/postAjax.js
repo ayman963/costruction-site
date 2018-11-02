@@ -2,7 +2,8 @@ function postAjax() {
   const xhr = new XMLHttpRequest();
   xhr.open(
     "POST",
-    "https://ow53ugb38i.execute-api.eu-west-1.amazonaws.com/Prod/"
+    "https://ow53ugb38i.execute-api.eu-west-1.amazonaws.com/Prod/",
+    true
   );
   xhr.onload = function() {
     const serverResponse = document.getElementById("submit");
