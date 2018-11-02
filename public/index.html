@@ -9,17 +9,7 @@
 	<link href="./css/construction.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,600,700" rel="stylesheet">
-	<script>
-		"use strict";
-		function submitForm(oFormElement) {
-			var xhr = new XMLHttpRequest();
-			xhr.onload = function () { alert(xhr.responseText); } // success case
-			xhr.onerror = function () { alert(xhr.responseText); } // failure case
-			xhr.open(oFormElement.method, oFormElement.action, true);
-			xhr.send(new FormData(oFormElement));
-			return false;
-		}
-	</script>
+	<script src="js/postAjax.js"></script>
 </head>
 
 <body>
@@ -32,7 +22,6 @@
 				beachten musst?<br>
 				Dann bist du hier genau richtig – in ein paar Monaten.<br><br>
 				Bis bald!</p>
-			ç
 			<div class="Logo">
 				<img src="./img/logo.png" alt="Ausbildung leicht gemacht">
 			</div>
@@ -41,17 +30,18 @@
 				<p class="Normalopen">Bleib auf dem Laufenden zu</p>
 				<p class="capitalslab">ausbildung leicht gemacht</p>
 			</div>
-			<form name="send" method="POST" action=" https://ow53ugb38i.execute-api.eu-west-1.amazonaws.com/Prod/" onsubmit="{return submitForm(this);}">
-				<input name="emailAddress" id="emailAddress" type="email" placeholder="Deine E-Mail Adresse">
 
-				<input type="submit" class="submit" id="submit" value="Senden" disabled="disabled">
-			</form>
+			<input name="emailAddress" id="emailAddress" type="email" placeholder="Deine E-Mail Adresse"><br>
+			<Button type="submit" class="submit" id="submit" disabled="disabled" onclick="postAjax()">
+				Senden </Button>
 			<div class="bestaetigung">
 				<input type="checkbox" name="checkbox" id="checkbox" value="Bike" onchange="document.getElementById('submit').disabled = !this.checked;">
 				Hiermit bestätige ich, dass mir ausbildung-leicht-gemacht.de Werbung per Newsletter zukommen lassen darf. <br>
 			</div>
 		</div>
 	</div>
+
 </body>
+
 
 </html>
