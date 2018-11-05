@@ -1,3 +1,9 @@
+let p;
+document.addEventListener("DOMContentLoaded", function() {
+  p = document.getElementById("submit");
+  p.addEventListener("click", postAjax);
+});
+
 function postAjax() {
   const xhr = new XMLHttpRequest();
   xhr.open(
@@ -6,8 +12,9 @@ function postAjax() {
     true
   );
   xhr.onload = function() {
-    const serverResponse = document.getElementById("submit");
-    cosole.log(this.responseText);
+    //const serverResponse = document.getElementById("submit");
+    console.log(this.responseText);
+    document.form.button.innerHTML = "Done!";
   };
 
   xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
