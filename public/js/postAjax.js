@@ -14,7 +14,9 @@ function postAjax() {
   xhr.onload = function() {
     //const serverResponse = document.getElementById("submit");
     console.log(this.responseText);
-    document.form.button.innerHTML = "Done!";
+    document.getElementById("submit").innerHTML = "Fertig";
+    document.getElementById("submit").disabled = true;
+    document.getElementById("emailAddress").value = "";
   };
 
   xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
