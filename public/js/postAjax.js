@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
   p.addEventListener("click", () => {
     ajax("https://ow53ugb38i.execute-api.eu-west-1.amazonaws.com/Prod", {
       type: "POST",
-      payload: { emailAddress: "hallo@welt.fe" }
+      payload: JSON.stringify({ emailAddress: "hallo@welt.fe" })
     });
   });
 });
@@ -33,7 +33,7 @@ function ajax(url, options, callback) {
     return callback(error);
   };
   xhr.open(options.type, url);
-  xhr.send(options.playload);
+  xhr.send(options.payload);
 }
 
 /* 
