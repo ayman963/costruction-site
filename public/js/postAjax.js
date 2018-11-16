@@ -1,13 +1,14 @@
 let p;
 document.addEventListener("DOMContentLoaded", function() {
   p = document.getElementById("submit");
+  email = document.getElementById("emailAddress");
   // p.addEventListener("click", postAjax);
   p.addEventListener("click", () => {
     ajax("https://ow53ugb38i.execute-api.eu-west-1.amazonaws.com/Prod", {
       type: "POST",
-      payload: JSON.stringify({
-        emailAddress: document.getElementById("emailAddress")
-      })
+      payload: {
+        emailAddress: email.value
+      }
     });
   });
 });
@@ -36,7 +37,7 @@ function ajax(url, options, callback) {
   };
 
   xhr.open(options.type, url);
-  xhr.send(options.payload);
+  xhr.send(JSON.stringify(options.payload));
 }
 
 /* 
