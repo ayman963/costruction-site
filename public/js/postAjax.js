@@ -19,8 +19,8 @@ function postAjax() {
     document.getElementById("emailAddress").value = "";
   };
 
-  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  xhr.send("emailAdress=ayman.hisnawi@gmail.com");
+  xhr.setRequestHeader("Content-type", "application/json");
+  xhr.send('{ "emailAdress": "hallo@welt.fe" }');
 }
 // example request
 //postAjax('http://foo.bar/', 'p1=1&p2=Hello+World', function(data){ console.log(data); });
