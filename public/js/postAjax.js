@@ -18,7 +18,15 @@ function ajax(url, options, callback) {
     callback = options;
     options = {};
   }
-  callback = callback || function() {};
+  callback =
+    callback ||
+    function() {
+      //const serverResponse = document.getElementById("submit");
+      console.log(this.responseText);
+      document.getElementById("submit").innerHTML = "Fertig";
+      document.getElementById("submit").disabled = true;
+      document.getElementById("emailAddress").value = "";
+    };
   var xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function() {
     if (xhr.readyState === XMLHttpRequest.DONE || xhr.readyState === 4) {
