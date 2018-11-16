@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     ajax("https://ow53ugb38i.execute-api.eu-west-1.amazonaws.com/Prod", {
       type: "POST",
       payload: JSON.stringify({
-        emailAddress: document.getElementById("emailAddress")
+        emailAddress: "{p}"
       })
     });
   });
@@ -34,13 +34,7 @@ function ajax(url, options, callback) {
   xhr.onerror = function(err) {
     return callback(err);
   };
-  xhr.onload = function() {
-    //const serverResponse = document.getElementById("submit");
-    console.log(this.responseText);
-    document.getElementById("submit").innerHTML = "Fertig";
-    document.getElementById("submit").disabled = true;
-    document.getElementById("emailAddress").value = "";
-  };
+
   xhr.open(options.type, url);
   xhr.send(options.payload);
 }
