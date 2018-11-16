@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     ajax("https://ow53ugb38i.execute-api.eu-west-1.amazonaws.com/Prod", {
       type: "POST",
       payload: JSON.stringify({
-        emailAddress: "{p}"
+        emailAddress: document.getElementById("emailAddress")
       })
     });
   });
