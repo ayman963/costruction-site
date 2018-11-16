@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
   p.addEventListener("click", () => {
     ajax("https://ow53ugb38i.execute-api.eu-west-1.amazonaws.com/Prod", {
       type: "POST",
-      payload: { emailAdress: "hallo@welt.fe" }
+      payload: { emailAddress: "hallo@welt.fe" }
     });
   });
 });
