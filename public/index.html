@@ -1,47 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ausbildung Leicht Gemacht</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1" />
 
-<head>
-	<meta charset="UTF-8">
-	<title>Ausbildung Leicht Gemacht</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1" />
+    <link href="./css/construction.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,600,700"
+      rel="stylesheet"
+    />
+    <script src="js/postAjax.js"></script>
+  </head>
 
-	<link href="./css/construction.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,600,700" rel="stylesheet">
-	<script src="js/postAjax.js"></script>
-</head>
+  <body>
+    <div class="content">
+      <div class="info">
+        <h1>Hi! Nicht erschrecken, hier entsteht etwas!</h1>
 
-<body>
+        <p class="Fliesstext">
+          Du suchst eine Ausbildung, weißt aber nicht, was dir gefällt, wie du
+          dich bewirbst oder was du beachten musst?<br />
+          Dann bist du hier genau richtig – in ein paar Monaten.<br /><br />
+          Bis bald!
+        </p>
+        <div class="Logo">
+          <img src="./img/logo.png" alt="Ausbildung leicht gemacht" />
+        </div>
 
-	<div class="content">
-		<div class="info">
-			<h1>Hi! Nicht erschrecken, hier entsteht etwas!</h1>
-
-			<p class="Fliesstext">Du suchst eine Ausbildung, weißt aber nicht, was dir gefällt, wie du dich bewirbst oder was du
-				beachten musst?<br>
-				Dann bist du hier genau richtig – in ein paar Monaten.<br><br>
-				Bis bald!</p>
-			<div class="Logo">
-				<img src="./img/logo.png" alt="Ausbildung leicht gemacht">
-			</div>
-
-			<div class="formtitel">
-				<p class="Normalopen">Bleib auf dem Laufenden zu</p>
-				<p class="capitalslab">ausbildung leicht gemacht</p>
-			</div>
-
-			<input name="emailAddress" id="emailAddress" type="email" placeholder="Deine E-Mail Adresse"><br>
-			<Button type="submit" class="submit" id="submit" disabled="disabled">
-				Senden </Button>
-			<div class="bestaetigung">
-				<input type="checkbox" name="checkbox" id="checkbox" value="Bike" onchange="document.getElementById('submit').disabled = !this.checked;">
-				Hiermit bestätige ich, dass mir ausbildung-leicht-gemacht.de Werbung per Newsletter zukommen lassen darf. <br>
-			</div>
-		</div>
-	</div>
-
-</body>
-
-
+        <div class="formtitel">
+          <p class="Normalopen">Bleib auf dem Laufenden zu</p>
+          <p class="capitalslab">ausbildung leicht gemacht</p>
+        </div>
+        <form>
+          <input
+            name="emailAddress"
+            id="emailAddress"
+            type="email"
+            placeholder="Deine E-Mail Adresse"
+          /><br />
+          <button type="submit" class="submit" id="submit" disabled="disabled">
+            Senden
+          </button>
+          <div class="bestaetigung">
+            <input
+              type="checkbox"
+              name="checkbox"
+              id="checkbox"
+              value="Bike"
+              onchange="document.getElementById('submit').disabled = !this.checked;"
+            />
+            Hiermit bestätige ich, dass mir ausbildung-leicht-gemacht.de Werbung
+            per Newsletter zukommen lassen darf. <br />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>

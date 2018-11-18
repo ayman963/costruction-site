@@ -4,12 +4,16 @@ document.addEventListener("DOMContentLoaded", function() {
   email = document.getElementById("emailAddress");
   // p.addEventListener("click", postAjax);
   p.addEventListener("click", () => {
-    ajax("https://ow53ugb38i.execute-api.eu-west-1.amazonaws.com/Prod", {
-      type: "POST",
-      payload: {
-        emailAddress: email.value
-      }
-    });
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)) {
+      ajax("https://ow53ugb38i.execute-api.eu-west-1.amazonaws.com/Prod", {
+        type: "POST",
+        payload: {
+          emailAddress: email.value
+        }
+      });
+      console.log("invalid email");
+    }
+    console.log("email sent");
   });
 });
 
@@ -21,7 +25,6 @@ function ajax(url, options, callback) {
   callback =
     callback ||
     function() {
-      //const serverResponse = document.getElementById("submit");
       console.log(this.responseText);
       document.getElementById("submit").innerHTML = "Fertig";
       document.getElementById("submit").disabled = true;
