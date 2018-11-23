@@ -1,180 +1,185 @@
 @charset "UTF-8";
 /* CSS Document */
 
-body, html { 
-	background: url(../img/background3.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	text-align:center;
+body,
+html {
+  background: url(../img/background3.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
 }
 
-.content{
-	width:100%;
-
+.content {
+  width: 100%;
 }
 
-img{
-	width:100%;
+img {
+  width: 100%;
 }
 
-
-.info{
-	margin-top:50px;
-	width:100%;
-	display:flex;
-	align-items: center;
-	flex-direction: column;
+.info {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-h1{
-	color:white;
-	font-size:40px;
-	font-family: 'Zilla Slab', serif;
-	padding:10px;
+h1 {
+  color: white;
+  font-size: 40px;
+  font-family: "Zilla Slab", serif;
+  padding: 10px;
 }
 
-.Fliesstext{
-	font-family: 'Open SAns', "sans-serif";
-	color:white;
-	font-size:20px;
-	font-weight: 200;
-	padding:10px;
+.Fliesstext {
+  font-family: "Open SAns", "sans-serif";
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 10px;
 }
 
-.Logo{
-	width:300px;
-	margin:auto;
-	margin-top:50px;
+.Logo {
+  width: 300px;
+  margin: auto;
+  margin-top: 50px;
 }
 
-.formtitel{
-	display:flex;
-	color:white;
-	font-family: 'Open SAns', "sans-serif";
-	margin-top:100px;
+.formtitel {
+  display: flex;
+  color: white;
+  font-family: "Open SAns", "sans-serif";
+  margin-top: 100px;
 }
 
-.capitalslab{
-	font-family: 'Zilla Slab', serif;
-	margin-left:7px;
-	text-transform: uppercase;
-	line-height: 1.5;
-	font-weight:600;
+.capitalslab {
+  font-family: "Zilla Slab", serif;
+  margin-left: 7px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-weight: 600;
 }
 
-#emailAddress{
-	font-family: 'Open SAns', "sans-serif";
-	color:rgb(74,74,73);
-	border-radius:5px;
-	height:50px;
-	width:500px;
-	border: none;
-	padding:5px;
-	padding-left:20px;
-	font-size:20px;
-	margin-top:10px;
-	margin-bottom:20px;
+#emailAddress {
+  font-family: "Open SAns", "sans-serif";
+  color: rgb(74, 74, 73);
+  border-radius: 5px;
+  height: 50px;
+  width: 500px;
+  border: none;
+  padding: 5px;
+  padding-left: 20px;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 ::placeholder {
-    color: lightgray;
-    opacity: 1; /* Firefox */
+  color: lightgray;
+  opacity: 1; /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color: lightgray;
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: lightgray;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
-   color: lightgray;
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: lightgray;
 }
 
-
-input[type=text]{
-	font-size:20px;
-	font-family: 'Open SAns', "sans-serif";
-	padding:5px;
+input[type="text"] {
+  font-size: 20px;
+  font-family: "Open SAns", "sans-serif";
+  padding: 5px;
 }
 
-.bestaetigung{
-	font-family: 'Open SAns', "sans-serif";
-	color:white;
-	font-size:16px;
-	font-weight: 300;
-	padding:10px;
+.lbl {
+  font-size: 16px;
+  font-family: "Open SAns", "sans-serif";
+  padding: 10px;
+  color: white;
+  font-weight: 900;
 }
 
-.submit{
-	font-family: 'Zilla Slab', serif;
-	font-weight:900;
-	font-size:20px;
-	border:none;
-	border-radius: 5px;
-	padding:10px 50px;
-	background-color:rgb(255,122,110);
-	box-shadow: 1px 1px 3px rgba(0,0,0,0.75);
-	color:white;
-	margin-top:20px;
-	margin-bottom:50px;
+.bestaetigung {
+  font-family: "Zilla Slab", serif;
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+  padding: 10px;
 }
 
-.submit:hover{
-	background-color: rgb(255,87,75);
-	
+.submit {
+  font-family: "Zilla Slab", serif;
+  font-weight: 900;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 50px;
+  background-color: rgb(255, 122, 110);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
-.submit:disabled, .submit[disabled]{
+
+.submit:hover {
+  background-color: rgb(255, 87, 75);
+}
+.submit:disabled,
+.submit[disabled] {
   border: 1px solid #999999;
   background-color: #cccccc;
   color: #666666;
 }
 
 @media only screen and (max-width: 621px) {
-	
-	.info{
-	margin-top:10px;
-	}
-	
-	
-	h1{
-		font-size:1.75em;
-	}	
-	
-	.Logo{
-		width:150px;
-		margin-top:20px;
-	}
-	
-	.Fliesstext{
-		font-size: 1em;
-	}
-	
-	.formtitel{
-		flex-direction: column;
-		margin-top:50px;
-	}
-	
-	.capitalslab{
-		margin-top:0;
-	}
-	
-	.Normalopen{
-		margin-bottom:3px;
-	}
-	
-	#emailAddress{
-		width:90%;
-		height:30px;
-		font-size:1em;
-	}
-	
-	.bestaetigung{
-		font-size:12px;
-	}
-	
-	.submit{
-		margin-bottom:10px;
-	}
-	
+  .info {
+    margin-top: 10px;
+  }
+
+  h1 {
+    font-size: 1.75em;
+  }
+
+  .Logo {
+    width: 150px;
+    margin-top: 20px;
+  }
+
+  .Fliesstext {
+    font-size: 1em;
+  }
+
+  .formtitel {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .capitalslab {
+    margin-top: 0;
+  }
+
+  .Normalopen {
+    margin-bottom: 3px;
+  }
+
+  #emailAddress {
+    width: 90%;
+    height: 30px;
+    font-size: 1em;
+  }
+
+  .bestaetigung {
+    font-size: 12px;
+  }
+
+  .submit {
+    margin-bottom: 10px;
+  }
 }

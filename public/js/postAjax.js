@@ -14,11 +14,15 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
       console.log("email sent");
-      document.getElementById("submit").innerHTML = "Fertig";
+      /*
+      document.getElementById("lbl").innerHTML = "Fertig";
       document.getElementById("submit").disabled = true;
       document.getElementById("emailAddress").value = "";
+      */
     } else {
       console.log("invalid email");
+      document.getElementById("lbl").innerHTML =
+        "Bitte überprüfen Sie Ihre Eingabe";
     }
   });
 });
@@ -32,7 +36,7 @@ function ajax(url, options, callback) {
     callback ||
     function() {
       console.log(this.responseText);
-      document.getElementById("submit").innerHTML = "Fertig";
+      document.getElementById("lbl").innerHTML = "Fertig";
       document.getElementById("submit").disabled = true;
       document.getElementById("emailAddress").value = "";
     };

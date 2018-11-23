@@ -36,28 +36,28 @@
           <p class="Normalopen">Bleib auf dem Laufenden zu</p>
           <p class="capitalslab">ausbildung leicht gemacht</p>
         </div>
-        <form>
+
+        <input
+          name="emailAddress"
+          id="emailAddress"
+          type="email"
+          placeholder="Deine E-Mail Adresse"
+        /><br />
+        <label id="lbl" class="lbl" for="submit"></label>
+        <button type="submit" class="submit" id="submit" disabled="disabled">
+          Senden
+        </button>
+        <div class="bestaetigung">
           <input
-            name="emailAddress"
-            id="emailAddress"
-            type="email"
-            placeholder="Deine E-Mail Adresse"
-          /><br />
-          <button type="submit" class="submit" id="submit" disabled="disabled">
-            Senden
-          </button>
-          <div class="bestaetigung">
-            <input
-              type="checkbox"
-              name="checkbox"
-              id="checkbox"
-              value="Bike"
-              onchange="document.getElementById('submit').disabled = !this.checked;"
-            />
-            Hiermit bestätige ich, dass mir ausbildung-leicht-gemacht.de Werbung
-            per Newsletter zukommen lassen darf. <br />
-          </div>
-        </form>
+            type="checkbox"
+            name="checkbox"
+            id="checkbox"
+            value="Bike"
+            onchange="document.getElementById('submit').disabled = !this.checked;"
+          />
+          Hiermit bestätige ich, dass mir ausbildung-leicht-gemacht.de Werbung
+          per Newsletter zukommen lassen darf. <br />
+        </div>
       </div>
     </div>
   </body>
