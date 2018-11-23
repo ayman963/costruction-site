@@ -11,9 +11,10 @@ document.addEventListener("DOMContentLoaded", function() {
           emailAddress: email.value
         }
       });
+      console.log("email sent");
+    } else {
       console.log("invalid email");
     }
-    console.log("email sent");
   });
 });
 
