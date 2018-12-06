@@ -58,7 +58,6 @@ var app = http
     }
   })
   .listen(port, "0.0.0.0");
-/*
 http
   .createServer(function(req, res) {
     res.writeHead(301, {
@@ -67,5 +66,4 @@ http
     res.end();
   })
   .listen(80, "0.0.0.0");
-*/
 module.exports = app;
