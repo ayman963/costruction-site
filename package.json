@@ -10,5 +10,9 @@
   },
   "scripts": {
     "test": "mocha --recursive tests --exit"
+  },
+  "dependencies": {
+    "nginx": "0.0.0",
+    "ngnx": "^1.0.6"
   }
 }
