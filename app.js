@@ -3,7 +3,7 @@ var port = process.env.PORT || 3000,
   fs = require("fs"),
   https = require("https");
 
-var app = https
+var app = http
   .createServer(function(req, res) {
     if (req.url.indexOf("/img") != -1) {
       var filePath = req.url.split("/img")[1];
@@ -59,7 +59,7 @@ var app = https
     }
   })
   .listen(port, "0.0.0.0");
-
+/*
 http
   .createServer(function(req, res) {
     res.writeHead(301, {
@@ -68,5 +68,5 @@ http
     res.end();
   })
   .listen(80, "0.0.0.0");
-
+*/
 module.exports = app;
