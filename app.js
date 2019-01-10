@@ -58,14 +58,4 @@ var port = process.env.PORT || 3000,
     }
   })
   .listen(port, "0.0.0.0");
-/*
-http
-  .createServer(function(req, res) {
-    res.writeHead(301, {
-      Location: "https://" + req.headers["host"] + req.url
-    });
-    res.end();
-  })
-  .listen(80, "0.0.0.0");
-*/
 module.exports = app;
